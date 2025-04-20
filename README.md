@@ -1,44 +1,53 @@
-# Neural Network from Scratch Using Numpy
+# Neural Network from Scratch using NumPy
 
-This repository contains the implementation of a neural network from scratch using Python's Numpy library. It covers the basic operations of a neural network, including forward and backward propagation, the ReLU activation function, and the derivatives of these functions. The dataset used is sourced from Kaggle.
-
-## Table of Contents
-
-1. [Overview](#overview)
-2. [Project Structure](#project-structure)
-3. [Dependencies](#dependencies)
-4. [Data](#data)
-5. [Implementation Details](#implementation-details)
-   - [Data Splitting](#data-splitting)
-   - [ReLU Activation Function](#relu-activation-function)
-   - [Forward and Backpropagation](#forward-and-backpropagation)
-   - [Testing Functions](#testing-functions)
-6. [How to Run](#how-to-run)
-7. [Results](#results)
-8. [Acknowledgments](#acknowledgments)
+This project provides a complete, professional implementation of a basic neural network built entirely with NumPy. It demonstrates a solid understanding of core machine learning principles by manually constructing each component without relying on high-level libraries such as TensorFlow or PyTorch.
 
 ## Overview
 
-This project demonstrates the implementation of a neural network from scratch using the Numpy library. The goal is to create a fully functional neural network that can be used for classification tasks. The model includes data preprocessing, activation functions, backpropagation, and evaluation metrics.
+The project includes a Jupyter Notebook that walks through the full development of a neural network, covering:
+
+- Manual dataset loading and splitting
+- Forward propagation
+- ReLU activation function and its derivative
+- Backward propagation using gradients
+- Weight and bias updates
+- Custom evaluation and testing functions
+
+Every part of the process was implemented from scratch using only NumPy.
 
 ## Project Structure
 
-- `neural_network.py`: Main implementation of the neural network with the forward and backward propagation functions.
-- `data_processing.py`: Scripts for splitting and preprocessing the dataset.
-- `utils.py`: Helper functions, including activation functions like ReLU.
-- `test.py`: Script for evaluating the performance of the model.
-- `README.md`: Project documentation.
 
-## Dependencies
+## Dataset
 
-The following libraries are required to run this project:
+- The dataset used was sourced from Kaggle.
+- It is stored locally in the `dataset/` folder.
+- All data preprocessing, splitting, and usage are handled manually within the notebook.
 
-- Python 3.x
-- Numpy
-- Pandas (for data handling)
-- Matplotlib (for plotting results)
+## Key Components
 
-You can install the dependencies using:
+- **Data Splitting**: The dataset is divided manually into training and testing sets.
+- **ReLU Activation**: Both the ReLU function and its derivative are implemented explicitly.
+- **Forward Propagation**: Computes outputs layer-by-layer using matrix operations.
+- **Backward Propagation**: Gradients are calculated manually to update the model's parameters.
+- **Model Evaluation**: Includes custom functions to test and evaluate performance on test data.
 
-```bash
-pip install -r requirements.txt
+## Motivation
+
+The primary goal of this project was to gain a clear and practical understanding of how neural networks function internally. By avoiding machine learning libraries and coding each function from scratch, I was able to deepen my understanding of:
+
+- Neural network architecture
+- The mathematics behind training models
+- The flow of data during training and inference
+- The role of activation functions and gradients in learning
+
+This project reflects both technical knowledge and the discipline to build a complete learning system from first principles.
+
+## How to Run
+
+To execute this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone <repo-url>
+   cd <repo-name>
